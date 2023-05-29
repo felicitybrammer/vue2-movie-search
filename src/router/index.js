@@ -2,8 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ResultsView from '../views/ResultsView.vue'
-import movieDetails from '../views/movieDetails.vue'
-import notFoundComponent from '../views/FileNotFound.vue'
+import MovieDetails from '../views/MovieDetails.vue'
+import NotFoundComponent from '../views/FileNotFound.vue'
 
 Vue.use(VueRouter)
 
@@ -21,12 +21,12 @@ const routes = [
   {
     path: '/movieDetails/:title',
     name: 'details',
-    component: movieDetails,
+    component: MovieDetails,
     props: true
   },
   {
     path: '*',
-    component: notFoundComponent
+    component: NotFoundComponent
   }
 ]
 

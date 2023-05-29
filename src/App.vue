@@ -3,9 +3,9 @@
     <header>
       <router-link :to="{ name: 'home' }"><h1>Movie Search</h1></router-link>
       <nav>
-        <router-link :to="{ name: 'home' }">Home</router-link> |
-        <router-link :to="{ name: 'results' }">About</router-link> |
-        <router-link :to="{ name: 'details', params: { title: 'Titanic' } }">Titanic</router-link>
+        <!-- make this conditional -->
+        <router-link :to="{ name: 'results' }">Search</router-link> 
+        
       </nav>
     </header>
     <router-view />
