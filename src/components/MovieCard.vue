@@ -1,7 +1,7 @@
 <template>
-  <router-link class="movie-card" :to="{ name: 'details', params: { title: 'Titanic' } }">
+  <router-link class="movie-card" :to="{ name: 'details', params: { movieTitle: 'Titanic' } }">
     <div class="">
-      <h4>{{ results.title }}</h4>
+      <h4>{{ }}</h4>
     </div>
   </router-link>
 </template>

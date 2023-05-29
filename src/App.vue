@@ -3,7 +3,7 @@
     <header>
       <router-link :to="{ name: 'home' }"><h1>Movie Search</h1></router-link>
       <nav>
-        
+        <p>Nav links here?</p>
       </nav>
     </header>
     <router-view />
