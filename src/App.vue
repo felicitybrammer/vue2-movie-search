@@ -3,8 +3,6 @@
     <header>
       <router-link :to="{ name: 'home' }"><h1>Movie Search</h1></router-link>
       <nav>
-        <!-- make this conditional -->
-        <router-link :to="{ name: 'results' }">Search</router-link> 
         
       </nav>
     </header>

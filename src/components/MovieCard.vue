@@ -1,18 +1,17 @@
 <template>
   <router-link class="movie-card" :to="{ name: 'details', params: { title: 'Titanic' } }">
     <div class="">
-      <h4>{{ title }}</h4>
+      <h4>{{ results.title }}</h4>
     </div>
   </router-link>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      title: 'Test Title'
-    }
-  }
+  props: {
+    results: Array
+  },
+  
 }
 </script>
 
