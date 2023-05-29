@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="results">
+    <h1>Results for (title will be inserted here)</h1>
   </div>
 </template>
