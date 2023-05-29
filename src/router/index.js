@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ResultsView from '../views/ResultsView.vue'
 import movieDetails from '../views/movieDetails.vue'
+import notFoundComponent from '../views/FileNotFound.vue'
 
 Vue.use(VueRouter)
 
@@ -20,12 +21,18 @@ const routes = [
   {
     path: '/movieDetails/:title',
     name: 'details',
-    component: movieDetails
+    component: movieDetails,
+    props: true
+  },
+  {
+    path: '*',
+    component: notFoundComponent
   }
 ]
 
-const router = new VueRouter({
+export default new VueRouter({
+  mode: 'history',
   routes
 })
 
-export default router
+
